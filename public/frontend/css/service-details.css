@@ -1,0 +1,289 @@
+/* Service Categories */
+.service-categories {
+    padding: 15px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.service-categories h5 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.service-categories ul {
+    padding-left: 0;
+}
+
+.service-categories li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(0, 123, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 123, 255, 0.2);
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bullet {
+    font-size: 30px;
+    margin-right: 10px;
+    color: black;
+}
+
+.category-name {
+    font-weight: bold;
+    flex-grow: 1;
+    color: #000;
+}
+
+.arrow {
+    font-size: 20px;
+    color: #28a745;
+    margin-left: 10px;
+}
+
+/* Active state */
+.service-categories li.active {
+    background-color: #8261ee;
+    border-color: #8261ee;
+}
+
+.service-categories li.active .bullet,
+.service-categories li.active .category-name,
+.service-categories li.active .arrow {
+    color: #fff;
+}
+
+/* Consultancy */
+.consultancy {
+    position: relative;
+    background-size: cover;
+    padding: 60px 70px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+
+/* Overlay shade */
+.consultancy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark shade overlay */
+    border-radius: 10px;
+}
+
+/* Text styling */
+.consultancy h5 {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+/* Call button */
+.consultancy .call-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.consultancy .call-btn:hover {
+    background: #218838;
+}
+
+/* Phone icon */
+.consultancy .call-btn i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Brochure Section */
+.brochure-section {
+    position: relative;
+    background: url('your-brochure-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+/* Overlay with a different shade */
+.brochure-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe8b3b;
+    /* Orange-Red shade */
+    border-radius: 10px;
+}
+
+/* Text styling */
+.brochure-section h5 {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+/* Download button */
+.brochure-section .download-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.brochure-section .download-btn:hover {
+    background: #e9c082;
+    /* Darker gold on hover */
+}
+
+/* Download icon */
+.brochure-section .download-btn i {
+    font-size: 18px;
+    margin-right: 8px;
+    margin-right: 8px;
+}
+
+/* Service Details */
+.service-details-right h6 {
+    font-weight: 700;
+    text-align: justify;
+}
+
+.service-overview-header,
+.service-benefits-header {
+    margin: 16px 0;
+    font-weight: 600;
+}
+
+.service-details-right-heading {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-details-right-heading img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Circular Charts */
+.circular-chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+    padding: 10px 16px;
+    background: beige;
+}
+
+.circular-chart-container .charts {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.circular-chart-container .chart {
+    position: relative;
+    width: 120px;
+}
+
+.circular-chart-container .chart svg {
+    transform: rotate(-90deg);
+}
+
+.circular-chart-container .chart circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.circular-chart-container .background-circle {
+    stroke: #e0e0e0;
+}
+
+.circular-chart-container .progress-circle {
+    stroke: #fe8b3b;
+    stroke-dasharray: 219.9;
+    stroke-dashoffset: 219.9;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.circular-chart-container .chart-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.circular-chart-container .chart-label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Benefit List */
+.benefit-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefit-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.benefit-list i {
+    margin-right: 10px;
+    color: green; /* Customize the icon color */
+}
+
+/* Process Section */
+#process h3 {
+    font-weight: 600;
+    margin: 16px 0;
+}

@@ -1,0 +1,45 @@
+.form-box .card {
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 20px;
+}
+
+.fixed-right {
+    background-color: #f1f1f1;
+    position: sticky !important;
+    right: -30 !important;
+    z-index: 1 !important;
+}
+
+.table-bordered {
+    border: 1px solid #503f71 !important;
+
+    tbody {
+        tr {
+            td {
+                border-width: 0 1px 1px 0px !important;
+                border-style: solid !important;
+                border-color: #503f71 !important;
+                padding: 0.25rem !important;
+            }
+        }
+    }
+
+    thead {
+        tr {
+            th {
+                background: #503f71 !important;
+                color: #f1f1f1;
+                vertical-align: middle !important;
+                text-align: center;
+            }
+        }
+    }
+}
+.required {
+    color: red;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
